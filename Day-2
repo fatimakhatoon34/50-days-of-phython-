@@ -1,0 +1,52 @@
+
+print("=== Simple Number Analyzer ===\n")
+
+# Get input from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("\n----------------------------")
+print("          RESULTS           ")
+print("----------------------------\n")
+
+# 1. Calculate Average
+avg = (num1 + num2) / 2
+print("Average is:", avg)
+print("\n")
+
+# 2. Calculate Percentage (num1 out of num2)
+if num2 != 0:
+    percent = (num1 / num2) * 100
+    print("Percentage:", percent, "%")
+else:
+    print("Percentage: Cannot divide by zero")
+print("\n")
+
+# 3. Calculate Factorial (for the first number)
+# Factorials are only for positive whole numbers
+if num1 >= 0:
+    fact = 1
+    for i in range(1, int(num1) + 1):
+        fact = fact * i
+    print("Factorial of first number is:", fact)
+else:
+    print("Factorial: Negative numbers do not have factorials")
+print("\n")
+
+# 4. Greater than / Less than / Equal checks
+print("--- Comparison Results ---")
+if num1 > num2:
+    print(num1, "is greater than", num2)
+elif num1 < num2:
+    print(num1, "is less than", num2)
+else:
+    print("Both numbers are equal!")
+print("\n")
+
+# 5. Even or Odd check (for the first number)
+if int(num1) % 2 == 0:
+    print(int(num1), "is Even")
+else:
+    print(int(num1), "is Odd")
+
+print("\n----------------------------")
