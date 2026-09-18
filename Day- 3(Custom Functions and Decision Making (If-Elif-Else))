@@ -1,0 +1,59 @@
+
+
+# Function to calculate the power of a number
+def calculate_power(base, exponent):
+    return base ** exponent
+
+# Function to check if a number is positive, negative, or zero
+def check_number_sign(number):
+    if number > 0:
+        return "Positive"
+    elif number < 0:
+        return "Negative"
+    else:
+        return "Zero"
+
+# Function to find the largest of three numbers
+def find_largest(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+# --- Main Program ---
+print("=== Python Function & Logic Tester ===\n")
+
+print("Choose an option:")
+print("1. Calculate Power (Base^Exponent)")
+print("2. Check Number Sign (Positive/Negative/Zero)")
+print("3. Find the Largest of Three Numbers")
+
+choice = input("\nEnter choice (1, 2, or 3): ")
+
+print("\n----------------------------")
+
+# Handling user choice using if-elif-else
+if choice == "1":
+    b = float(input("Enter base number: "))
+    e = float(input("Enter exponent number: "))
+    result = calculate_power(b, e)
+    print(f"\nResult: {b} raised to the power of {e} is {result}")
+
+elif choice == "2":
+    num = float(input("Enter a number to check: "))
+    sign = check_number_sign(num)
+    print(f"\nResult: The number {num} is {sign}")
+
+elif choice == "3":
+    n1 = float(input("Enter first number: "))
+    n2 = float(input("Enter second number: "))
+    n3 = float(input("Enter third number: "))
+    largest = find_largest(n1, n2, n3)
+    print(f"\nResult: The largest number is {largest}")
+
+else:
+    print("\nInvalid choice! Please run the program again and select 1, 2, or 3.")
+
+print("----------------------------")
