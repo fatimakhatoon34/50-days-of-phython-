@@ -1,0 +1,61 @@
+# Day 5: Student Grade Manager using Dictionaries and Strings
+
+print("=== Student Grade & Record Manager ===\n")
+
+# Store student grades in a dictionary
+student_marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "Diana": 64
+}
+
+# 1. Display existing student records
+print("Current Student Records:")
+for name, score in student_marks.items():
+    print(f"- {name}: {score} marks")
+
+print("\n----------------------------")
+
+# 2. Add a new student record from user input
+new_name = input("Enter new student name: ").strip().capitalize()
+new_score = float(input(f"Enter marks for {new_name}: "))
+
+# Insert into dictionary
+student_marks[new_name] = new_score
+
+print("\n----------------------------")
+print("          RESULTS           ")
+print("----------------------------\n")
+
+# 3. Calculate class average
+total_score = sum(student_marks.values())
+student_count = len(student_marks)
+class_average = total_score / student_count
+
+print("Total Students:", student_count)
+print("Class Average:", round(class_average, 2))
+print("\n")
+
+# 4. Search for a student's grade
+search_name = input("Enter student name to search: ").strip().capitalize()
+
+if search_name in student_marks:
+    score = student_marks[search_name]
+    print(f"\n{search_name}'s Score: {score}")
+    
+    # Assign grade based on score
+    if score >= 90:
+        print("Grade: A")
+    elif score >= 80:
+        print("Grade: B")
+    elif score >= 70:
+        print("Grade: C")
+    elif score >= 60:
+        print("Grade: D")
+    else:
+        print("Grade: F")
+else:
+    print(f"\nStudent '{search_name}' was not found in records.")
+
+print("\n----------------------------")
