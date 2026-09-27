@@ -1,4 +1,4 @@
-# 🐍 My 50 Days of Python Challenge
+# ✨ My 50 Days of Python Challenge
 
 
 
@@ -6,7 +6,7 @@ I would like to introduce myself as an ICS student from Pakistan trying to get a
 
 
 
-## 🚀 My 50 Day Journey
+## 👉 My 50 Day Journey
 
 Instead of wasting my time learning coding basics, I decided to speedrun the easy  and jump straight into the hard level projects and concepts.
 
@@ -48,7 +48,7 @@ Days 36-50: Object oriented programming (OOP)
 
 To wrap it all up, I learned the concept of OOP by utilizing classes and objects to make fully functioning console applications.
 
-## 🛠️ My Coding Achievements
+## ✨ My Coding Achievements
 
 
 
